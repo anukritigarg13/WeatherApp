@@ -6,8 +6,8 @@ const forecast=require("./utils/weather.js")
 const app=express()
 
 //define paths for Express Config
-console.log(__dirname)
-console.log(path.join(__dirname,'../public'))
+//console.log(__dirname)
+//console.log(path.join(__dirname,'../public'))
 const pathViews=path.join(__dirname,'/templates/views')
 const partialViews=path.join(__dirname,'/templates/partials')
 //Setup Handlebars
