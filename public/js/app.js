@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit',(e)=>{
         else{
             console.log(data.data)
             message1.textContent=data.location
-            message2.textContent="It is "+data.data.temperature+" outside. With a "+data.data.weather_code+" weather and precipitation type is "+data.data.precipitation_type
+            message2.textContent="It is "+data.data.temperature+" outside. With a "+data.data.weather_code+" weather and precipitation type is "+data.data.precipitation_type+".Feels like "+data.data.feels_like+" outside"
         }
         
     })

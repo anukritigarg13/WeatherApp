@@ -8,7 +8,7 @@ const forecast=(latitude,longitude,callback)=>{
            lat:latitude,
            lon:longitude,
            unit_system: 'si',
-           fields: 'weather_code,temp,precipitation_type',
+           fields: 'weather_code,temp,precipitation_type,feels_like',
            apikey: 'QF4KyXGkNB3XfjVm49vCtNVYQCA10Gg5'
          },
          json:true
@@ -29,7 +29,8 @@ const forecast=(latitude,longitude,callback)=>{
         callback(undefined,{
           temperature:body.temp.value,
           weather_code:body.weather_code.value,
-          precipitation_type:body.precipitation_type.value
+          precipitation_type:body.precipitation_type.value,
+          feels_like:body.feels_like.value
         })
       }
   
